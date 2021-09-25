@@ -1,0 +1,30 @@
+{
+  "name": "crc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SCK_T1",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.2",
+    "fs": "^0.0.1-security",
+    "http-errors": "^1.7.2",
+    "mongoose": "^6.0.7",
+    "multer": "^1.4.3",
+    "node-pre-gyp": "^0.17.0",
+    "nodejs": "^0.0.0",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "sqlite3": "^5.0.2"
+  }
+}

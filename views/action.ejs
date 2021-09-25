@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+
+<body>
+
+    <h1>Add Activity</h1>
+
+    <form action="/action/addaction" id="ActionAdd" method="POST" enctype="multipart/form-data">
+
+        <label>Activity: </label>
+        <select id="action" name="name" onchange="a_ptsUpdate()">
+            <option value="0">Activity List</option>
+            <option value="50,Walking">Walking</option>
+            <option value="100,Cycling">Cycling</option>
+            <option value="25,Taking Public Transportaion">Taking Public Transportaion</option>
+            <option value="20,Using Tumblr">Using Tumblr</option>
+            <option value="20,Using own bags">Using own bags</option>
+            <option value="10,Pulling out a plug that you don't use">Pulling out a plug that you don't use</option>
+            <option value="10,parking for lunch">parking for lunch</option>
+            <option value="5,clearing the AC filter">clearing the AC filter</option>
+            <option value="10,Maintaining temperature">Maintaining temperature</option>
+            <option value="20,Using stairs">Using stairs</option>
+            <option value="10,reducing the time of Heat/AC system">reducing the time of Heat/AC system</option>
+        </select><br>
+
+        <label>The number of times: </label>
+        <input id="times" name="repeat" type="number" placeholder="Minimum is 1" oninput="t_ptsUpdate()">
+
+        <p id="notice">"Expected Points is <span id="a_pts">" (Activity points)</span>&nbsp X &nbsp<span
+                id="t_pts">(Times)" </span> points."</p>
+        <p>Add Activity Image</p>
+        <input id="file-input" accept="image/*" name="image" type="file">
+
+
+       
+        <input id="submit" type="submit" value="submit">
+
+    </form>
+    </div>
+    <script>
+        function a_ptsUpdate() {
+            var action_value = document.getElementById("action").value;
+
+            var a_points = [];
+            var regex = /[0-9]/;
+            for (var i = 0; i < action_value.length; i++) {
+                if (action_value[i].match(regex)) {
+                    a_points += action_value[i];
+                }
+            }
+            document.getElementById("a_pts").innerText = a_points;
+        }
+
+        function t_ptsUpdate() {
+
+            var selected_times = document.getElementById("times").value;
+            document.getElementById("t_pts").innerText = selected_times;
+        }
+
+    </script>
+</body>
+
+</html>

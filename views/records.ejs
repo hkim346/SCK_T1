@@ -1,0 +1,35 @@
+
+
+<section>
+    <div class="record_container">
+        <h1>Record</h1><a href="/">Home</a><br><br>
+        <div class="record_inner">
+
+        </div>
+    </div>
+    <!-- <div class="record_filter">
+        <select name=""></select>
+
+    </div> -->
+    <div class="record_area">
+        <% records.forEach((record)=> { %>
+            <div class="record_items">
+                <% if (record.dataUrl) { %>
+                <img class="record_item_img" src=<%=record.dataUrl%>>
+                
+                <%} else { %>
+                    <p class="image-notfound">NO IMG</p>
+                <%}%>
+            
+                <div class="record_item_description">
+                    <span>action category: <%=record.name%></span>
+                    <span>action point: <%=record.pointvalue%></span>
+                    <span>repetations: <%=record.repeat%></span><br>
+                    <span>total point: <%=record.totalpoint%></span>
+                    <span>date: <%=record.date%></span>
+                </div>
+            
+            </div>
+        <% }) %>
+    </div>
+</section>

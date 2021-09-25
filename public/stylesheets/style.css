@@ -1,0 +1,125 @@
+
+
+
+#index-container, #register-container, #login-container{
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width:45%;
+  text-align: center;
+}
+
+
+.ranking_container{
+  display: table;
+  height: 580px;
+  width: 500px;
+  margin-top: 250px;
+}
+
+.ranking_inner{
+  display: table-cell;
+  text-align: center;
+  border:solid black 1px;
+}
+
+.ranking_term{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 1rem 0;
+  width: 100%;
+  height: 70px;
+  line-height: 35px;
+  background-color: red;
+}
+
+.index_ranking_terms{
+  font-size: large ;
+  font-weight: bold;
+}
+
+.ranking_indicator,record_area{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 100%;
+  height: 550px;
+  overflow: auto;
+  background-color: aquamarine;
+}
+
+.ranking_person {
+  width: 100%;
+  height: 55px;
+  margin: 2px 0;
+  flex-shrink: 0;
+  font-size: larger;
+  background-color: lightcoral;
+}
+
+.ranking_container {
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  display: table;
+  height: 580px;
+  width: 500px;
+  margin-top: 250px;
+}
+
+
+.record_container{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.record_filter{
+  /* display: table-cell; */
+  width: 80%;
+  margin:0 auto;
+  height: 300px;
+  background-color: red;
+}
+
+.record_area{
+  flex-shrink: 0;
+  width: 60%;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  background-color: aquamarine;
+}
+
+.record_items{
+  width: 100%;
+  height: 100px;
+  background-color: burlywood;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.record_item_img{
+  width: 90px;
+  margin: 5px 0px 0px 5px;
+  display: inline-block;
+}
+
+.record_item_description{
+  /* display: flex; */
+  text-align: center;
+  background-color: chocolate;
+  width: 638px;
+  height: 80%;
+  position: relative;
+  /* top: -25px; */
+  display: inline-block;
+}
+
+.record_item_description span{
+  margin:0 30px;
+}
+

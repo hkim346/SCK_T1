@@ -1,0 +1,59 @@
+[33mcommit 445fdb7676d9cc1ea0e437acff428475b8d41b3a[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mheroku/master[m[33m)[m
+Author: joon5582 <56269438+joon5582@users.noreply.github.com>
+Date:   Mon Sep 20 09:23:44 2021 -0400
+
+    fixed deleted image from server
+
+[33mcommit 54f0e38ff4e1dd0b7bd9118f17a20c594e856a58[m
+Author: joon5582 <56269438+joon5582@users.noreply.github.com>
+Date:   Sun Sep 19 21:48:00 2021 -0400
+
+    imgDB add
+
+[33mcommit e3eb059dd217eb9d8098d28da9e41ceeaaa39bbc[m
+Author: joon5582 <56269438+joon5582@users.noreply.github.com>
+Date:   Sun Sep 19 21:34:13 2021 -0400
+
+    fix post
+
+[33mcommit 68eb43edc0d4f85da015026fc28fd9d8972c4007[m
+Author: joon5582 <56269438+joon5582@users.noreply.github.com>
+Date:   Sun Sep 19 21:30:06 2021 -0400
+
+    asd'
+
+[33mcommit 505def632a3f52bc4ea055e20fb862e4ae233f82[m
+Author: joon5582 <56269438+joon5582@users.noreply.github.com>
+Date:   Sun Sep 19 21:18:39 2021 -0400
+
+    remove multipart/form-data
+
+[33mcommit 94823081bf24de011204a9f9f0638ae912403604[m
+Author: joon5582 <56269438+joon5582@users.noreply.github.com>
+Date:   Sun Sep 19 21:04:41 2021 -0400
+
+    console
+
+[33mcommit f689f3464d4412731c85b67faee1550bbd07c1d0[m
+Author: joon5582 <56269438+joon5582@users.noreply.github.com>
+Date:   Sun Sep 19 20:53:20 2021 -0400
+
+    change title
+
+[33mcommit caace18e1a09d337c65e14af96e39217506bc535[m
+Author: joon5582 <56269438+joon5582@users.noreply.github.com>
+Date:   Sun Sep 19 20:48:07 2021 -0400
+
+    added ejs module
+
+[33mcommit 89d0d995d98c76d5548822b3943a84f5d14bafae[m
+Author: joon5582 <56269438+joon5582@users.noreply.github.com>
+Date:   Sun Sep 19 20:43:20 2021 -0400
+
+    set start
+
+[33mcommit 7887e0e72d8aa55c3ab76e907a860fcf2d2ea7d5[m
+Author: joon5582 <56269438+joon5582@users.noreply.github.com>
+Date:   Sun Sep 19 20:35:32 2021 -0400
+
+    without node modules first commit

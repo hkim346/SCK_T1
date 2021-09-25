@@ -1,0 +1,36 @@
+<div id="register-container">
+<h1>Register</h1>
+<% if (typeof errors != 'undefined') { %>
+<% errors.forEach((error)=> { %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong><%=error.msg%></strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% }) %>
+<% } %>
+<form action="/register" method="POST">
+    <div>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+    </div>
+    <div>
+        <label for="name">User Name</label><br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+    </div>
+    <div>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+    </div>
+    <div>
+        <label for="confirm">Confirm Password</label><br>
+        <input type="password" id="confirm" name="confirm" required>
+        <br><br>
+    </div>
+    <input type="submit" value="Register">
+</form><br>
+<a href="/">Home</a><br><br>
+<a href="/login">Login</a>
+</div>

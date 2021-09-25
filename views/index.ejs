@@ -1,0 +1,58 @@
+<% if (typeof username !='undefined' ) { %>
+    <div class="navbar">
+        <div></div>
+        <div class="navi-home">
+            <button type="button" class="btn btn-success" onclick="window.location.href='/action'">Add Activity</button>
+            <button type="button" class="btn btn-success" onclick="window.location.href='/records'">My Activities</button>
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+    <div id="index-container">
+        <h1>Hello <%=username.name%>!</h1><br><br>
+        <p>Here is ranking table</p>
+    </div>
+    <div class="ranking_container">
+        <div class="ranking_inner">
+            <div class="ranking_term">
+                <div class="index_ranking_terms">Ranking</div>
+            </div>
+            <div class="ranking_indicator">
+                <% rankusers.forEach((user)=> { %>
+                <div class="ranking_person">
+                    User name: <%=user.name%><br> total points: <%=user.totalpoint%>
+                </div>
+                
+                <% }) %>
+            </div>
+        </div>
+    </div>
+    
+    <%} else { %>
+        <div class="navbar">
+            <div></div>
+            <div class="navi-home">
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            </div>
+        </div>
+        <div id="index-container">
+            <h1>Carbon Reduction Challenge</h1><br><br>
+            <p>Here is ranking table</p>
+        </div>
+        <div class="ranking_container">
+            <div class="ranking_inner">
+                <div class="ranking_term">
+                    <div class="index_ranking_terms">Ranking</div>
+                </div>
+                <div class="ranking_indicator">
+                    <% rankusers.forEach((user)=> { %>
+                    <div class="ranking_person">
+                        name: <%=user.name%>, total points: <%=user.totalpoint%>
+                    </div>
+                    
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+        
+    <%}%>
